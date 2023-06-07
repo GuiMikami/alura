@@ -6,8 +6,8 @@ public class Filme {
 
     boolean incluidoNoPlano ;
 
-    double somaAvaliacoes;
-    int totalAvaliacoes;
+    private double somaAvaliacoes;
+    private int totalAvaliacoes;
     public Filme(String nome, int anoDeLancamento, int duracaoEmMinutos, boolean incluidoNoPlano) {
         this.nome = nome;
         this.anoDeLancamento = anoDeLancamento;
@@ -30,6 +30,10 @@ public class Filme {
 
     public double calculaMedia(){
         return somaAvaliacoes / totalAvaliacoes;
+    }
+
+    public int getTotalAvaliacoes() {
+        return totalAvaliacoes;
     }
 
 }

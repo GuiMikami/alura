@@ -7,7 +7,7 @@ public class Main {
         filme1.avaliacao(10);
         filme1.avaliacao(7);
         filme1.avaliacao(8.5);
-
+        System.out.println("Total de avaliações: " + filme1.getTotalAvaliacoes());
         System.out.println("Média das avaliações: " + filme1.calculaMedia());
 
     }
