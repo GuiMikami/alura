@@ -10,6 +10,11 @@ public class Serie extends Titulo {
         super(nome, anoDeLancamento);
     }
 
+    @Override
+    public String toString() {
+        return "Nome da série: "  + getNome() + "\n"+   "Ano de lançamento: " + getAnoDeLancamento() +
+                "\n" + "------------------------------------------";
+    }
 
     @Override
     public void exibeFichaTecnica(){

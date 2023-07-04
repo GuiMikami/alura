@@ -11,6 +11,11 @@ public class Filme extends Titulo implements Classificavel {
         super(nome, anoDeLancamento);
     }
 
+    @Override
+    public String toString() {
+        return "Nome do filme: "  + getNome() + "\n"+   "Ano de lançamento: " + getAnoDeLancamento() +
+                "\n" + "------------------------------------------";
+    }
 
     @Override
     public void exibeFichaTecnica(){
