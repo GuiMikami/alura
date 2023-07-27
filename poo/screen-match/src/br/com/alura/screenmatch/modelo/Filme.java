@@ -13,14 +13,20 @@ public class Filme extends Titulo implements Classificavel {
 
     @Override
     public String toString() {
-        return "Nome do filme: "  + getNome() + "\n"+   "Ano de lançamento: " + getAnoDeLancamento() +
+        return "Nome do filme: " + getNome() + "\n" + "Ano de lançamento: " + getAnoDeLancamento() +
                 "\n" + "------------------------------------------";
     }
 
     @Override
-    public void exibeFichaTecnica(){
+    public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + getNome());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+    }
+
+
+    @Override
+    public int getClassificacao() {
+        return (int) pegaMedia() / 2;
     }
 
     public String getDiretor() {
@@ -29,10 +35,5 @@ public class Filme extends Titulo implements Classificavel {
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
-    }
-
-    @Override
-    public int getClassificacao() {
-        return (int) pegaMedia() / 2;
     }
 }
