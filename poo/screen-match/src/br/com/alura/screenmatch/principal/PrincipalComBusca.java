@@ -32,6 +32,7 @@ public class PrincipalComBusca {
         String json = response.body();
         System.out.println(json);
 
+        //convertendo json para objeto java
         Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create(); // padrao de nomeclatura
 
         TituloOmdb meuTituloomdb = gson.fromJson(json,TituloOmdb.class);
